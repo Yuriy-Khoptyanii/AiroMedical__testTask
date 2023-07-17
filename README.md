@@ -1,37 +1,40 @@
-# Vite + React + Typescript + Eslint + Prettier
+# AiroMedical testTask
 
-A starter for React with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
+## How to start
 
-![Vite + React + Typescript + Eslint + Prettier](/resources/screenshot.png)
+### visit the [demo page](https://yuriy-khoptyanii.github.io/AiroMedical__testTask).
 
-I found out about Vite and I wanted to have a boilerplate for the technologies that I use. You can find more about these in the following links: [Vite](https://github.com/vitejs/vite), [React](https://reactjs.org/), [Typescript](https://www.typescriptlang.org/), [Eslint](https://eslint.org/), [Prettier](https://prettier.io/).
+### To run locally:
 
-## Installation
+1. Clone the project to your local machine
+2. yarn install
+3. yarn dev
+4. Open the app in your web browser by navigating to http://localhost:3000
 
-Clone the repo and run `yarn install`
+## What is this task about
 
-or Run command
+Created an app that displays a list of beer recipes.
+Users be able to scroll through a list of recipes and to view a single recipe.
 
-```
-npx degit TheSwordBreaker/vite-reactts-eslint-prettier project-name
-```
+### Detailed instructions that were taken into account during execution:
 
-## Start
+● Get a list of recipes on initial load, save them in the zustand store
+(https://api.punkapi.com/v2/beers?page=1)
+● The amount of recipes rendered should always be 15
+● Implement multiple selection of recipes. User can select multiple recipes by clicking on
+recipes with the mouse right button. If user selected at least one recipe, the "Delete"
+button should appear somewhere.
+● If the user clicks the "Delete" button, selected items should be removed from rendered
+list (but still 15 recipes should be rendered).
+● Users can deselect recipe if item is clicked one more time.
+● Users can go to a single recipe page by clicking on recipe card with mouse left button.
+● If there is no more recipes to show, you should make another API request to get another
+25 recipes.
 
-After the successfull installation of the packages: `yarn dev`
+## Technologies
 
-## Steps in Vscode
-
-#### (works with better with this template)
-
-1. Install Eslint and prettier extension for vs code.
-2. Make Sure Both are enabled
-3. Make sure all packages are Installed. (Mostly Eslint and prettier in node_modules)
-4. Enable formatOnSave of vs code
-5. Open a .tsx file and check if the bottom right corners of vs code have Eslint and Prettier with a double tick
-
-![Screenshot (253)_LI](https://user-images.githubusercontent.com/52120562/162486286-7383a737-d555-4f9b-a4dd-c4a81deb7b96.jpg)
-
-If Everything is Good Then It Should Work, but let me new if something else happens
-
-Made with ❤️ by theSwordBreaker(we Destory all types of sword ⚡)
+- React with hooks
+- Typescript
+- Zustand
+- SCSS
+- React-spinners

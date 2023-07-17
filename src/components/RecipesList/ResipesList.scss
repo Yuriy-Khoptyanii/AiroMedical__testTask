@@ -1,0 +1,80 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__row {
+    border-bottom: 1px solid #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &--header {
+      margin: 0;
+    }
+
+    &__colName {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #333;
+      min-width: 120px;
+
+      &:nth-child(3) {
+        min-width: 400px;
+      }
+    }
+
+    &__strName {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0px 20px 0;
+      padding: 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      color: #292D32;
+      width: max-content;
+      min-width: 120px;
+
+      &:nth-child(3) {
+        min-width: 400px;
+      }
+
+      &--img {
+        width: 20px;
+      }
+    }
+  }
+}
+
+.delete_btn {
+  position: fixed;
+  right: 120px;
+  top: 220px;
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #d32f2f;
+  }
+  
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.3);
+  }
+  
+  &:active {
+    background-color: #b71c1c;
+  }
+}
