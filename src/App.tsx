@@ -25,7 +25,6 @@ const App: FC = () => {
 
   return (
     <div className="app">
-      <h1 className="app_title">List of beer recipes</h1>
       {isLoading ? <SyncLoader size={48} color="#006400" /> : <RecipesList />}
     </div>
   );

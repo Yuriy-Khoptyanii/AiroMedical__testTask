@@ -47,6 +47,7 @@ const RecipesList: FC = () => {
 
   return !selectedRecipe ? (
     <table className="table">
+      <h1 className="app_title">List of beer recipes</h1>
       <thead>
         <tr className="table__row table__row--header">
           {columnName.map((name) => {
